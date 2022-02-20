@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favourites",
+  "info": {
+    "name": "Favourite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "via": "favourites",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

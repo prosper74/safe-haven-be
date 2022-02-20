@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posttags",
+  "info": {
+    "name": "posttags",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "via": "posttags",
+      "collection": "post"
+    }
+  }
+}

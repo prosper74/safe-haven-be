@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Categories",
+  "info": {
+    "name": "Categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text",
+      "required": false,
+      "unique": false
+    },
+    "filterOptions": {
+      "type": "json",
+      "required": false
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "properties": {
+      "via": "category",
+      "collection": "properties"
+    }
+  }
+}

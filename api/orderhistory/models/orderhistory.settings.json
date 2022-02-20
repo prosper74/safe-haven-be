@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orderhistories",
+  "info": {
+    "name": "orderhistory"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "via": "orderhistories",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "reference": {
+      "type": "integer",
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}

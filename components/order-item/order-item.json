@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_order_item_order_items",
+  "info": {
+    "name": "Item",
+    "icon": "money-check-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "subItem": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "topbars",
+  "info": {
+    "name": "topbar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "info": {
+      "type": "text",
+      "required": true
+    },
+    "isVisible": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "duration": {
+      "type": "integer",
+      "required": true,
+      "min": 1
+    },
+    "discountPercent": {
+      "type": "integer",
+      "required": true,
+      "min": 5,
+      "max": 100
+    },
+    "isTimedout": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

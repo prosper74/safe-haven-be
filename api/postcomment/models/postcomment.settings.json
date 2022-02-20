@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postcomments",
+  "info": {
+    "name": "postcomment"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comment": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 2000
+    },
+    "post": {
+      "via": "postcomments",
+      "model": "post"
+    },
+    "users_permissions_user": {
+      "via": "postcomments",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

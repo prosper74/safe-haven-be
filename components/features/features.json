@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_features_features",
+  "info": {
+    "name": "features",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

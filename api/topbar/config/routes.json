@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/topbar",
+      "handler": "topbar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/topbar",
+      "handler": "topbar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/topbar",
+      "handler": "topbar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
