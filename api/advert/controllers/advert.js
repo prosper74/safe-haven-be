@@ -21,6 +21,32 @@ module.exports = {
     return sanitizeEntity(entity, { model: strapi.models.advert });
   },
 
+  async update(ctx) {
+    const { id } = ctx.params;
+
+    let entity;
+
+    const [advert] = await strapi.services.advert.find({
+      id,
+      users_permissions_user: ctx.state.user.id,
+    });
+
+    if (!advert) {
+      return ctx.unauthorized(`You can't update this ad`);
+    }
+
+    if (ctx.is("multipart")) {
+      const { data, files } = parseMultipartData(ctx);
+      entity = await strapi.services.advert.update({ id }, data, {
+        files,
+      });
+    } else {
+      entity = await strapi.services.advert.update({ id }, ctx.request.body);
+    }
+
+    return sanitizeEntity(entity, { model: strapi.models.advert });
+  },
+
   async delete(ctx) {
     const { id } = ctx.params;
 
