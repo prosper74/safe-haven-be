@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adverts",
+  "info": {
+    "name": "advert",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": "json"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "adverts"
+    },
+    "category": {
+      "model": "categories",
+      "via": "adverts"
+    }
+  }
+}

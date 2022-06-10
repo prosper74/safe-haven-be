@@ -93,7 +93,8 @@
       "required": false
     },
     "verified": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "image": {
       "model": "file",
@@ -104,6 +105,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "adverts": {
+      "via": "users_permissions_user",
+      "collection": "advert"
     }
   }
 }

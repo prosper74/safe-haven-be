@@ -13,25 +13,25 @@ module.exports = {
     if (ctx.is("multipart")) {
       const { data, files } = parseMultipartData(ctx);
       data.user = ctx.state.user.id;
-      entity = await strapi.services.properties.create(data, { files });
+      entity = await strapi.services.advert.create(data, { files });
     } else {
       ctx.request.body.user = ctx.state.user.id;
-      entity = await strapi.services.properties.create(ctx.request.body);
+      entity = await strapi.services.advert.create(ctx.request.body);
     }
-    return sanitizeEntity(entity, { model: strapi.models.properties });
+    return sanitizeEntity(entity, { model: strapi.models.advert });
   },
 
   async delete(ctx) {
     const { id } = ctx.params;
 
-    const [properties] = await strapi.services.properties.find({
+    const [advert] = await strapi.services.advert.find({
       id,
       users_permissions_user: ctx.state.user.id,
     });
 
-    if (!properties) return ctx.unauthorized("You can't update this entry.");
+    if (!advert) return ctx.unauthorized("You can't update this entry.");
 
-    const entity = await strapi.services.properties.delete({ id });
-    return sanitizeEntity(entity, { model: strapi.models.properties });
+    const entity = await strapi.services.advert.delete({ id });
+    return sanitizeEntity(entity, { model: strapi.models.advert });
   },
 };

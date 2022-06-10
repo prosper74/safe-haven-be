@@ -42,6 +42,10 @@
     "properties": {
       "via": "category",
       "collection": "properties"
+    },
+    "adverts": {
+      "via": "category",
+      "collection": "advert"
     }
   }
 }
