@@ -31,6 +31,47 @@
       "model": "user",
       "via": "adverts"
     },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "bedroom": {
+      "type": "string"
+    },
+    "bathroom": {
+      "type": "string"
+    },
+    "sittingroom": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal",
+      "default": 0
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "features": {
+      "type": "text"
+    },
+    "favourites": {
+      "collection": "favourite"
+    },
+    "reviews": {
+      "collection": "review"
+    },
     "category": {
       "model": "categories",
       "via": "adverts"
