@@ -84,10 +84,6 @@
       "via": "users_permissions_user",
       "collection": "orderhistory"
     },
-    "properties": {
-      "via": "users_permissions_user",
-      "collection": "properties"
-    },
     "phone": {
       "type": "biginteger",
       "required": false
