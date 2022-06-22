@@ -105,6 +105,10 @@
     "adverts": {
       "via": "users_permissions_user",
       "collection": "advert"
+    },
+    "verifications": {
+      "via": "users_permissions_user",
+      "collection": "verification"
     }
   }
 }

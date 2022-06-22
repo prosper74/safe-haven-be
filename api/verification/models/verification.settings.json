@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "verifications",
+  "info": {
+    "name": "verification"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "identity": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "verifying": {
+      "type": "boolean",
+      "default": false
+    },
+    "images": {
+      "type": "json"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "verifications"
+    }
+  }
+}
