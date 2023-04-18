@@ -1,5 +1,5 @@
 {
-  "name": "loctechbe",
+  "name": "safeHaven",
   "private": true,
   "version": "0.1.0",
   "description": "An elearning application",
@@ -28,7 +28,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "Loctech"
+    "name": "SafeHaven"
   },
   "strapi": {
     "uuid": "eb3924d8-c746-4e08-940c-3a2bc5b9d9c0"
