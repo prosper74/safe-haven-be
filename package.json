@@ -6,6 +6,7 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
+    "prebuild": "npm i",
     "build": "strapi build",
     "strapi": "strapi"
   },
