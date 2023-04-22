@@ -1,0 +1,11 @@
+name: my-strapi-app
+version: 1
+environments:
+  production:
+    commands:
+      # Use npm i instead of npm ci
+      build: npm i && npm run build
+      start: npm start
+addons:
+  # Add MongoDB addon
+  - mongodb
