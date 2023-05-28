@@ -11,20 +11,20 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "strapi": "3.6.8",
-    "strapi-admin": "3.6.8",
-    "strapi-connector-mongoose": "3.6.8",
-    "strapi-plugin-content-manager": "3.6.8",
-    "strapi-plugin-content-type-builder": "3.6.8",
-    "strapi-plugin-email": "3.6.8",
-    "strapi-plugin-i18n": "3.6.8",
-    "strapi-plugin-upload": "3.6.8",
-    "strapi-plugin-users-permissions": "3.6.8",
-    "strapi-provider-email-nodemailer": "^3.6.8",
+    "strapi": "3.6.9",
+    "strapi-admin": "3.6.9",
+    "strapi-connector-mongoose": "3.6.9",
+    "strapi-plugin-content-manager": "3.6.9",
+    "strapi-plugin-content-type-builder": "3.6.9",
+    "strapi-plugin-email": "3.6.9",
+    "strapi-plugin-i18n": "3.6.9",
+    "strapi-plugin-upload": "3.6.9",
+    "strapi-plugin-users-permissions": "3.6.9",
+    "strapi-provider-email-nodemailer": "^3.6.9",
     "strapi-provider-email-sendinblue": "^1.0.6",
     "strapi-provider-email-smtp": "^1.0.2",
-    "strapi-provider-upload-cloudinary": "^3.6.8",
-    "strapi-utils": "3.6.8"
+    "strapi-provider-upload-cloudinary": "^3.6.9",
+    "strapi-utils": "3.6.9"
   },
   "author": {
     "name": "SafeHaven"
@@ -33,8 +33,8 @@
     "uuid": "eb3924d8-c746-4e08-940c-3a2bc5b9d9c0"
   },
   "engines": {
-    "node": ">=10.16.0 <=18.x.x",
-    "npm": ">=6.0.0 <=9.x.x"
+    "node": ">=10.16.0 <=20.x.x",
+    "npm": ">=6.0.0 <=10.x.x"
   },
   "license": "MIT",
   "resolutions": {
